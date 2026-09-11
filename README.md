@@ -51,7 +51,6 @@ Final_Prototype_SIH26/
 ---
 
 ## 🔑 TextBee SMS OTP Connection
-- **API Key**: 	xb_kfocljUl5G9bplOkm77nkLVi0jcB8qzJ
 - **Configured in**: src/services/authService.ts & ite.config.ts
 - **Fallback / Testing**: If no physical Android SMS device is connected in the TextBee dashboard, the system displays the generated OTP in a convenient dev card on screen, and universal demo code 123456 is also supported.
 
