@@ -22,66 +22,42 @@ Or view the pre-compiled production build inside the dist/ folder.
 ---
 
 ## 📁 Project Structure
-
-`
-Final_Prototype_SIH26/
-[ Step 1: Repository Initialization ]
-                     │
-                     ▼
-            (Repository Lead)
-         • Creates GitHub Repo
-         • Pushes `.gitignore`, `.oxlintrc.json`
-                     │
-                     ├────────────────────────────────────────┐
-                     ▼                                        ▼
-       [ Step 2: Core Data Setup ]             [ Step 3: UI/UX Setup ]
-                     │                                        │
-                     ▼                                        ▼
-                (Data Lead)                                (UX)
-          • Pushes JSON datasets                 • Pushes `ux/` folder
-          • Pushes `generate_dataset.py`                     │
-                     │                                        │
-                     ▼                                        │
-       [ Step 4: ML & Documentation ]                         │
-                     │                                        │
-                     ▼                                        │
-                (ML Data Specialist)                          │
-         • Pushes CSV training datasets                       │
-         • Pushes `DATASET_DOCUMENTATION.md`                 │
-                     │                                        │
-                     ▼                                        │
-      [ Step 5: Model Artifacts ]                             │
-                     │                                        │
-                     ▼                                        │
-               (Model Specialist)                             │
-        • Pushes `.joblib` files in `database/models/`        │
-                     │                                        │
-                     ▼                                        │
-        [ Step 6: System Agents ]                             │
-                     │                                        │
-                     ▼                                        │
-             (Agent Specialist)                               │
-         • Pushes `Agent.md`                                  │
-                     │                                        │
-                     └────────────────────────────────────────┘
-                                     │
-                                     ▼
-                    [ Step 7: Final Review & Merge ]
-                                     │
-                                     ▼
-                       • Verifies directory structure
-                       • Tags initial release commit
+NER FINAL/
+├── database/                     
+│   ├── models/                  
+│   ├── complete_ner_dataset.json 
+│   ├── DATASET_DOCUMENTATION.md 
+│   ├── districts.json         
+│   ├── fleets.json               
+│   ├── generate_dataset.py      
+│   ├── incidents.json           
+│   ├── kpis.json                 
+│   ├── ml_live_training_dataset.csv 
+│   └── ml_training_dataset.csv   
+│
+├── dist/                         
+├── node_modules/               
+├── public/                      
+├── src/                         
+│
+├── .gitignore                  
+├── .oxlintrc                    
+├── Agent                        
+├── index                         
+├── LICENSE                    
+├── package                      
+├── package-lock                 
+├── postcss.config.js             
+├── README                      
+├── start_dev                  
+├── start_preview               
+├── tailwind.config.js            
+├── tsconfig.app                 
+├── tsconfig                   
+├── tsconfig.node             
+└── vite.config.ts              
 
 ---
-
-
-Project Flow-Chat:
-<img width="981" height="692" alt="image" src="https://github.com/user-attachments/assets/c1d21964-e0aa-4018-a4ec-367b38607f86" />
-
-
-
-
-
 ## 🔑 TextBee SMS OTP Connection
 - **API Key**: 	xb_kfocljUl5G9bplOkm77nkLVi0jcB8qzJ
 - **Configured in**: src/services/authService.ts & ite.config.ts
