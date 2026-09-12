@@ -8,13 +8,13 @@ This folder contains the complete, self-contained, working prototype and databas
 ## 🚀 How to Run the Website
 
 ### Option 1: Development Server (Instant Live Reload)
-`ash
+
 npm run dev
 `
 Open your browser at: http://localhost:5173
 
 ### Option 2: Production Preview Build
-`ash
+
 npm run preview
 `
 Or view the pre-compiled production build inside the dist/ folder
